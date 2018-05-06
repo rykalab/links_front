@@ -57,7 +57,7 @@ import Step3 from '@/components/shop/steps/Step3'
           userData: this.$store.state.userData
         })
         .then(()=>{
-          this.$store.state.added = []
+          this.added = []
           this.$router.push({path: '/basket'})
         })
       }
