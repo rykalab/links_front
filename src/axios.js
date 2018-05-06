@@ -1,9 +1,10 @@
 import axios from 'axios';
 import store from './store'
 import router from './router'
+import env from './env'
 
 window.axios = axios
-axios.defaults.baseURL = 'http://127.0.0.1:8000/api/'
+axios.defaults.baseURL = env.API_URL
 
 let interval = 0;
 
